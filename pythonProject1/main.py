@@ -39,6 +39,14 @@ output = "{} oranges costs £{}".format(oranges, total_cost)
 print(output)
 
 # homework
-my_name = "Penelope"
-my_age = 29
-message = 'My name is {} and I am {} years old'.format(my_name, my_age)
+# I have a lot of boxes of eggs in my fridge and I want to calculate how many omelettes I can
+# make.
+
+boxes_of_eggs = 2
+eggs_per_box = 6
+eggs_per_omelette = 4
+omelettes = eggs_per_box * boxes_of_eggs / eggs_per_omelette
+
+output = f'You can make {omelettes} omelettes with {boxes_of_eggs} boxes of eggs.'
+print(output)
+
