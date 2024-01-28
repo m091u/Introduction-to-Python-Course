@@ -123,7 +123,7 @@ for number in range(4):
     print(calc_res)
 
 
-# Homework
+
 
 
 

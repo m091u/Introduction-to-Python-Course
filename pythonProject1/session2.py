@@ -11,9 +11,24 @@ total_apples = int(purchased_apples) + 5
 print(total_apples)
 
 
-#Exercise 2.2 Write a program calculate how many pizzas you need to feed you and your friends
+# Exercise 2.2 Write a program calculate how many pizzas you need to feed you and your friends
 friends = input('How many friends are coming over?')
-pizzas = int(friends)* 0.5
+pizzas = int(friends) * 0.5
 
-print('You need {} pizzas for {} friends'. format( pizzas, friends))
+print('You need {} pizzas for {} friends'. format(pizzas, friends))
 
+
+# Homework
+# Question 1
+for number in range(100):
+    output = 'o' * number
+    print(output)
+
+
+# Question 2
+def calculate_vat(amount):
+    return amount * 1.2
+
+
+total = calculate_vat(100)
+print(total)
