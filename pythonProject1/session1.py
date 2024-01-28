@@ -38,6 +38,8 @@ total_cost = oranges * cost_per_orange
 output = "{} oranges costs £{}".format(oranges, total_cost)
 print(output)
 
+print('foo\nbar')
+
 # homework
 # I have a lot of boxes of eggs in my fridge and I want to calculate how many omelettes I can
 # make.
