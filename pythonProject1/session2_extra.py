@@ -65,3 +65,35 @@ for i in ['foo', 'bar', 'baz', 'qux']:
     print(f'iteration with break {i}')
 else:
     print('Done.')
+
+
+# functions
+def hello():
+    name = str(input("Enter your name:"))
+    if name:
+        print(f'Hello {name}')
+    else:
+        print('Hello world')
+    return
+
+hello()
+
+# lambada functions
+# Define a lambda function that adds two numbers
+add_numbers = lambda x, y: x + y
+
+# Use the lambda function
+result = add_numbers(5, 3)
+
+# Print the result
+print("Result of adding two numbers:", result)
+
+# example 2
+numbers = [1, 2, 3, 4, 5]
+
+# Use a lambda function with map to square each number
+squared_numbers = list(map(lambda x: x**2, numbers))
+
+
+print("Original Numbers:", numbers)
+print("Squared Numbers:", squared_numbers)
