@@ -1,3 +1,5 @@
+import random
+
 for number in range(9):
     print('~' * number)
 
@@ -87,4 +89,30 @@ else:
     print('No discount')
 print(f'Total cost: {meal_price}')
 
+# Exercise 3.5
 
+temp = int(input('What is the ovem temperature?'))
+
+if temp > 200:
+    print("The oven is too hot")
+elif temp < 150:
+    print("The oven is too cold")
+elif temp == 180:
+    print("The oven is at the perfect temperature")
+else:
+    print("The temperature is close enough")
+
+
+random_integer = random.randint(1, 100)
+print(random_integer)
+
+
+sides = int(input('How many sides does the dice have? '))
+random_integer = random.randint(1,  sides)
+
+print(f'Your rolled a {random_integer}')
+
+print(True and True)
+print(True and False)
+print(True or True)
+print(True or False)
