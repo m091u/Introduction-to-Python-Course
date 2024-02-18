@@ -28,11 +28,8 @@ elif 1900 <= year < 2000:
     century = "Twentieth"
 elif year == 1800:
     century = "Eighteenth"
-else:
-    century = "Incorrect year"
 
 decade_number = int(year % 100 / 10)
-
 if decade_number == 0:
     decade = "Noughties"
 elif decade_number == 1:
@@ -56,4 +53,23 @@ elif decade_number == 9:
 else:
     decade = "Unknown Decade"
 
-print(f'Your book is from the {century} century and the {decade}')
+if 1800 < year < 1950:
+    print(f'Your book is from the {century} century and the {decade}')
+else:
+    print('Year is incorrect')
+
+
+# Extra Exercise 2 Word Jumble Game
+import random
+words =['cat', 'rain', 'pear', 'apple', 'banana', 'orange', 'strawberry', 'peach']
+
+word = random.choice(words)
+jumbled_word = ''.join(random.sample(word, len(word)))
+print(f'The jumbled word is: {jumbled_word}')
+
+guess = input("Guess the original word: ")
+
+if guess == word:
+    print('You guessed')
+else:
+    print('That is incorrect. The word was:', word)
