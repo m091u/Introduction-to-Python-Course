@@ -16,14 +16,12 @@ import requests
 
 pokemon_number = input("What is the Pokemon's ID? ")
 
-url = 'https://pokeapi.co/api/v2/pokemon/{}/'.format(pokemon_number)
+url = f'https://pokeapi.co/api/v2/pokemon/{pokemon_number}/'
 
 response = requests.get(url)
 pokemon = response.json()
 
-print(pokemon['name'])
-print(pokemon['height'])
-print(pokemon['weight'])
+print(f'Pokemon name is {pokemon['name']}, height is {pokemon['height']} and weight is {pokemon['weight']}')
 
 # moves
 import requests
